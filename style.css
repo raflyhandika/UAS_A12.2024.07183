@@ -1,0 +1,168 @@
+/* RESET DASAR */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* JUDUL */
+.card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* FORM */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* TOMBOL */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-warning {
+    background: #f39c12;
+    color: #fff;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #7f8c8d;
+    color: #fff;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    background: #34495e;
+    color: #fff;
+    padding: 10px;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* AKSI */
+.action a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.action .edit {
+    background: #f39c12;
+}
+
+.action .hapus {
+    background: #e74c3c;
+}
+
+/* LINK */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-weight: bold;
+    }
+}
+
