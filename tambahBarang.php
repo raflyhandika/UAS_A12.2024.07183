@@ -12,7 +12,7 @@ if (isset($_POST['simpan'])) {
         NULL,'$nama','$kategori','$harga','$stok','$tanggal'
     )";
 
-    mysqli_query($conn, $sql);
+    mysqli_query($koneksi, $sql);
     header("Location: tampilDataBarang.php");
 }
 ?>
@@ -25,11 +25,17 @@ if (isset($_POST['simpan'])) {
 </head>
 <body>
     <h2>Form Input Data Barang</h2>
-<form method="post" action="simpanDataBarang.php">
+<form method="post" action="simpanDataBarang.php" onsubmit="return validateForm()">
     Nama Barang <input type="text" name="nama" required><br>
-    Kategori <input type="text" name="kategori"><br>
+    Kategori 
+    <select name="kategori"><br>
+    <option>Bahan Baku</option>
+    <option>Alat</option>
+    <option>Kemasan</option>
+    </select>
     Harga <input type="number" name="harga" required><br>
     Stok <input type="number" name="stok" required><br>
     Tanggal Masuk <input type="date" name="tanggal"><br>
     <button name="simpan">Simpan</button>
 </form>
+<script src="script.js"></script>

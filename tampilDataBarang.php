@@ -1,4 +1,11 @@
 <?php include 'koneksi.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tampil Data Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <h2>Data Barang Toko Roti</h2>
 <link rel="stylesheet" href="style.css">
 <a href="dashboard.php">Dashboard</a><br><br>
@@ -13,7 +20,7 @@
     <th>Harga</th>
     <th>Stok</th>
     <th>Tanggal Masuk</th>
-    <th>Aksi</th>
+    <th>Aksi</th><br><br>
 </tr>
 
 <?php
@@ -34,4 +41,6 @@ while ($d = mysqli_fetch_array($data)) {
     </td>
 </tr>
 <?php } ?>
+<script src="script.js"></script>
 </table>
+
