@@ -166,3 +166,25 @@ a:hover {
     }
 }
 
+/* Toast Notification */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    background: #3B82F6;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.toast.show {
+    right: 20px;
+}
+
+.toast.error {
+    background: #EF4444;
+}
+
