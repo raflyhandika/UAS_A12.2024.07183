@@ -53,7 +53,7 @@ $user = $_SESSION['user'];
 <body>
 
 <header>
-    <h2>Dashboard Sistem Pencatatan Barang Toko Roti</h2>
+    <h2>Sistem Pencatatan Barang Toko Roti</h2>
     <p>Selamat datang, <b><?= htmlspecialchars($user['nama']) ?></b></p>
 </header>
 
@@ -72,7 +72,7 @@ $user = $_SESSION['user'];
         <p><b>Nama:</b> <?= htmlspecialchars($user['nama']) ?></p>
         <p><b>Username:</b> <?= htmlspecialchars($user['username']) ?></p>
     </div>
-
+    
 </div>
 
 </body>
