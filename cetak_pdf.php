@@ -26,7 +26,7 @@ $query = mysqli_query($koneksi,"SELECT * FROM barang");
 while ($data = mysqli_fetch_assoc($query)) {
     $pdf->Cell(10,8,$no++,1);
     $pdf->Cell(50,8,$data['nama_barang'],1);
-    $pdf->Cell(40,8,$data['kategori'],1);
+    $pdf->Cell(30,8,$data['kategori'],1);
     $pdf->Cell(40,8,$data['harga'],1);
     $pdf->Cell(30,8,$data['stok'],1);
     $pdf->Cell(30,8,$data['tanggal'],1);
