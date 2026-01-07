@@ -31,3 +31,4 @@ if (isset($_POST['update'])) {
     Stok <input type="number" name="stok" value="<?= $d['stok'] ?>"><br>
     <button name="update">Update</button>
 </form>
+.

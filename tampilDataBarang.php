@@ -44,3 +44,4 @@ while ($d = mysqli_fetch_array($data)) {
 <script src="script.js"></script>
 </table>
 
+.
