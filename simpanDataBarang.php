@@ -22,4 +22,3 @@ if (isset($_POST['simpan'])) {
     exit;
 }
 ?>
-.

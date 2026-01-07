@@ -34,4 +34,3 @@ if (isset($_POST['register'])) {
 </form>
 </body>
 </html>
-.
