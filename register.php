@@ -32,5 +32,6 @@ if (isset($_POST['register'])) {
     <input type="password" name="password" placeholder="Password" required><br><br>
     <button type="submit" name="register">Daftar</button>
 </form>
+<script src="script.js"></script>
 </body>
 </html>

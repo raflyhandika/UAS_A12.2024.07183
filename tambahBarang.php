@@ -39,3 +39,5 @@ if (isset($_POST['simpan'])) {
     <button name="simpan">Simpan</button>
 </form>
 <script src="script.js"></script>
+</body>
+</html>
